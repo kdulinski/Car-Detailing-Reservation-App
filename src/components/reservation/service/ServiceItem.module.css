@@ -1,0 +1,28 @@
+.service {
+  width: 33%;
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.service img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  transition: 0.5s all ease-in-out;
+}
+
+.service:hover img {
+  transform: scale(1.1);
+}
+
+.service-description {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(30, 30, 30, 0.7);
+  text-align: center;
+}

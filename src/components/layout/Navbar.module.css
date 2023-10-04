@@ -1,0 +1,30 @@
+ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+li a:hover:not(.active) {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.6s;
+}
+
+.active {
+  background-color: #a90404;
+}

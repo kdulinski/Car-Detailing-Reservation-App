@@ -1,0 +1,58 @@
+.stages {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 2vh 10px 2vh 0;
+}
+
+.stage {
+  width: 40%;
+  height: 40px;
+  position: relative;
+  background: #222;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stage:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #111;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+.stage:before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #222;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.activ {
+  background-color: #a90404;
+  color: white;
+}
+
+.activ:before {
+  border-left: 10px solid #a90404;
+}
+
+.actions {
+  margin-top: 2vh;
+  padding-bottom: 12vh;
+}
+
+h2 {
+  margin-bottom: 1vh;
+  font-weight: 500;
+}
